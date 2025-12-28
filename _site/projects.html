@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marco Schumacher</title>
+  <meta name="description" content="parts of my life so far on a site" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/Icon.svg" type="image/svg+xml" />
+
+  <style>
+  :root { color-scheme: light; }
+
+  html, body { height: 100%; }
+
+  body{
+    margin:0;
+    background:#131313;
+    color:#f0f0f0;
+    font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+
+  .page{
+    max-width: 44rem;
+    padding: 3.5rem 1.25rem 0;
+    margin: 0 auto;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  main{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  p{ margin: 0 0 .75rem 0; }
+
+  ul{ list-style: none; padding: 0; margin: 0; }
+
+  footer{
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.55);
+    padding-top: 2.5rem; /* space above footer text */
+    padding-bottom: 1.25rem; /* small breathing room from very bottom */
+  }
+
+  .top-left{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+
+  font-size: .95rem;
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  padding: .25rem .35rem;
+  border-radius: .4rem;
+
+  transition: background-color .18s ease, color .18s ease;
+}
+
+.top-left:hover,
+.top-left:focus-visible{
+  background: rgba(255,255,255,.10);
+  color: rgba(255,255,255,.95);
+}
+</style>
+</head>
+<body>
+  <a class="top-left" href="./index.html" aria-label="Back to home">
+    personal site / projects<span data-page-label></span>
+  </a>
+  <div class="page">
+    <main>
+      <h1>Projects</h1>
+
+      <p>
+        Overview of things I've built or worked on. Some are polished, some are experiments.
+      </p>
+
+      <h2 style="font-size:1.15rem;margin:1.75rem 0 .75rem 0;font-weight:650;letter-spacing:-0.01em;">
+        Highlighted
+      </h2>
+      <ul style="display:grid;gap:.65rem;">
+        <li style="padding:.75rem .9rem;border:1px solid rgba(255,255,255,.10);border-radius:.65rem;background:rgba(255,255,255,.03);">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:1rem;">
+            <div style="font-weight:650;">MaskRL</div>
+            <div style="color:rgba(255,255,255,.55);font-size:.9rem;">(2025-ongoing)</div>
+          </div>
+          <div style="color:rgba(255,255,255,.75);font-size:.95rem;margin-top:.25rem;">
+            My first attempt at an independent research focused project: Using reinforcement learning (RL) for image segmentation tasks.
+          </div>
+          <div style="color:rgba(255,255,255,.60);font-size:.9rem;margin-top:.4rem;">
+            Stack: Python, PyTorch, Stable-Baselines3, PascalVoc
+          </div>
+          <div style="margin-top:.55rem;display:flex;gap:.9rem;flex-wrap:wrap;">
+            <a rel="noopener noreferrer"
+              style="color:#1a73e8;text-decoration:none;"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'">
+              repo (soon)
+            </a>
+            <a rel="noopener noreferrer"
+              style="color:#1a73e8;text-decoration:none;"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'">
+              video (soon)
+            </a>
+          </div>
+        </li>
+
+        <li style="padding:.75rem .9rem;border:1px solid rgba(255,255,255,.10);border-radius:.65rem;background:rgba(255,255,255,.03);">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:1rem;">
+            <div style="font-weight:650;">EldenRL</div>
+            <div style="color:rgba(255,255,255,.55);font-size:.9rem;">(2023-2024)</div>
+          </div>
+          <div style="color:rgba(255,255,255,.75);font-size:.95rem;margin-top:.25rem;">
+            Reinforcement Learning for Elden Ring
+          </div>
+          <div style="color:rgba(255,255,255,.60);font-size:.9rem;margin-top:.4rem;">
+            Stack: Python, PyTorch, Stable-Baselines3
+          </div>
+          <div style="margin-top:.55rem;display:flex;gap:.9rem;flex-wrap:wrap;">
+            <a href="https://github.com/ocram444/EldenRL" target="_blank" rel="noopener noreferrer"
+              style="color:#1a73e8;text-decoration:none;"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'">
+              repo
+            </a>
+            <a href="https://www.youtube.com/watch?v=NzTwDO4ehPY" target="_blank" rel="noopener noreferrer"
+              style="color:#1a73e8;text-decoration:none;"
+              onmouseover="this.style.textDecoration='underline'"
+              onmouseout="this.style.textDecoration='none'">
+              video
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <h2 style="font-size:1.15rem;margin:1.75rem 0 .75rem 0;font-weight:650;letter-spacing:-0.01em;">
+        More stuff
+      </h2>
+      <p style="color:rgba(255,255,255,.75);margin-bottom:.75rem;">
+        Smaller projects, prototypes, and one-off builds.
+      </p>
+      <ul style="display:grid;gap:.5rem;">
+        <li style="color:rgba(255,255,255,.85);">
+          • ShineiBot - AI Twitch Streamer using GPT-4o and a Virtual Avatar
+          <span style="color:rgba(255,255,255,.55);"> Python, OpenAI-API, voice cloning</span>
+        </li>
+        <li style="color:rgba(255,255,255,.85);">
+          • Ingredient Inspire - Meal Recommendation App using GPT-3
+          <span style="color:rgba(255,255,255,.55);"> Python, OpenAI-API, ReactJS, Vite</span>
+        </li>
+        <li style="color:rgba(255,255,255,.85);">
+          • Web based Internet Speedtest
+          <span style="color:rgba(255,255,255,.55);"> ReactJS, JS, AWS</span>
+        </li>
+      </ul>
+
+      <h2 style="font-size:1.15rem;margin:1.75rem 0 .75rem 0;font-weight:650;letter-spacing:-0.01em;">
+        Links
+      </h2>
+      <p style="margin:0 0 .75rem 0;">
+        <a href="https://github.com/ocram444" target="_blank" rel="noopener noreferrer"
+          style="color:#1a73e8;text-decoration:none;"
+          onmouseover="this.style.textDecoration='underline'"
+          onmouseout="this.style.textDecoration='none'">
+          GitHub
+        </a>
+        <span style="color:rgba(255,255,255,.55);"> - code + small contributions</span>
+      </p>
+      <p style="margin:0;">
+        <a href="https://www.youtube.com/@patrickstar686" target="_blank" rel="noopener noreferrer"
+          style="color:#1a73e8;text-decoration:none;"
+          onmouseover="this.style.textDecoration='underline'"
+          onmouseout="this.style.textDecoration='none'">
+          YouTube
+        </a>
+        <span style="color:rgba(255,255,255,.55);"> - project videos</span>
+      </p>
+    </main>
+
+    <footer>
+      © <span></span> 2025 Marco Schumacher, ocram111111[at]gmail.com
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marco Schumacher</title>
+  <meta name="description" content="parts of my life so far on a site" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/Icon.svg" type="image/svg+xml" />
+
+  <style>
+  :root { color-scheme: light; }
+
+  html, body { height: 100%; }
+
+  body{
+    margin:0;
+    background:#131313;
+    color:#f0f0f0;
+    font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+
+  .hero-icon{
+    width: clamp(120px, 28vw, 250px);
+    height: auto;
+    display: block;
+    margin: 0 0 1.25rem 0;
+  }
+
+  .page{
+    max-width: 44rem;
+    padding: 3.5rem 1.25rem 0;
+    margin: 0 auto;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  main{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  p{ margin: 0 0 .75rem 0; }
+
+  ul{ list-style: none; padding: 0; margin: 0; }
+
+  footer{
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.55);
+    padding-top: 2.5rem; /* space above footer text */
+    padding-bottom: 1.25rem; /* small breathing room from very bottom */
+  }
+
+  .top-left{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+
+  font-size: .95rem;
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  padding: .25rem .35rem;
+  border-radius: .4rem;
+
+  transition: background-color .18s ease, color .18s ease;
+}
+
+.top-left:hover,
+.top-left:focus-visible{
+  background: rgba(255,255,255,.10);
+  color: rgba(255,255,255,.95);
+}
+</style>
+</head>
+<body>
+  <a class="top-left" href="./index.html" aria-label="Back to home">
+    personal site / goals<span data-page-label></span>
+  </a>
+  <div class="page">
+    <main>
+      <h1>Goals</h1>
+
+      <h4>external</h4>
+      <p>
+        I want to contribute and make a lasting impact on the world and future. In my opinion research and taking risks on projects is the best way to do that.
+        I also want to do my best to make the world a great place to live and always try to maximize the joy for people around me.
+      </p>
+
+      <h4>personal</h4>
+      <p>continuing to improve myself, building a real legacy to be remembered for, giving back to the world, having a nice family</p>
+
+      <h4>why?</h4>
+      <p>
+        Yeah, I don't know. I have had this mindset for a long time. I guess I have always loved working on projects and tinkering with stuff. My time spent online then led me to computer science and science in general.
+        I formed my goal after I watched
+        <a href="https://www.youtube.com/@Vsauce" target="_blank" rel="noopener noreferrer"
+          style="color:#1a73e8;text-decoration:none;"
+          onmouseover="this.style.textDecoration='underline'"
+          onmouseout="this.style.textDecoration='none'">
+          Vsauce
+        </a>
+        and
+        <a href="https://www.youtube.com/@SciShow" target="_blank" rel="noopener noreferrer"
+          style="color:#1a73e8;text-decoration:none;"
+          onmouseover="this.style.textDecoration='underline'"
+          onmouseout="this.style.textDecoration='none'">
+          SciShow
+        </a>
+        on YouTube for a long time and found my admiration for science and tech.
+      </p>
+
+      <h4>some thoughts I once heard in a YouTube video that stuck with me</h4>
+      <p>
+        I grew up in a rich country with supportive parents and friends. Of course I have had my own struggles in life but I felt like throwing away that opportunity would be incredibly selfish.
+        A lot of people have the potential to contribute to the world but their circumstances keep them trapped and unable to do so. I don't know if I have it in me to do that, but the least I can do is try.
+        If I were to do the bare minimum, never take risks and stop growing, I would feel like I am taking away the opportunity someone else could have used to make the world a better place.
+        <br><br>
+      </p>
+
+      <img
+        class="hero-icon"
+        src="./assets/images/me.jpeg"
+        alt="me"
+      />
+    </main>
+
+    <footer>
+      © <span></span> 2025 Marco Schumacher, ocram111111[at]gmail.com
+    </footer>
+  </div>
+</body>
+</html>

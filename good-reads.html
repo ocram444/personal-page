@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marco Schumacher</title>
+  <meta name="description" content="parts of my life so far on a site" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/Icon.svg" type="image/svg+xml" />
+
+  <style>
+  :root { color-scheme: light; }
+
+  html, body { height: 100%; }
+
+  body{
+    margin:0;
+    background:#131313;
+    color:#f0f0f0;
+    font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+
+  .page{
+    max-width: 44rem;
+    padding: 3.5rem 1.25rem 0;
+    margin: 0 auto;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  main{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  p{ margin: 0 0 .75rem 0; }
+
+  ul{ list-style: none; padding: 0; margin: 0; }
+
+  footer{
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.55);
+    padding-top: 2.5rem; /* space above footer text */
+    padding-bottom: 1.25rem; /* small breathing room from very bottom */
+  }
+
+  .top-left{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+
+  font-size: .95rem;
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  padding: .25rem .35rem;
+  border-radius: .4rem;
+
+  transition: background-color .18s ease, color .18s ease;
+}
+
+.top-left:hover,
+.top-left:focus-visible{
+  background: rgba(255,255,255,.10);
+  color: rgba(255,255,255,.95);
+}
+</style>
+</head>
+<body>
+  <a class="top-left" href="./index.html" aria-label="Back to home">
+    personal site / good-reads<span data-page-label></span>
+  </a>
+  <div class="page">
+    <main>
+      <h1>Good reads</h1>
+
+      <p>
+        I like reading thoughtful stories that can teach me something about life and my purpose. This page is a small list of books that stuck with me.
+      </p>
+
+      <h2 style="font-size:1.15rem;margin:1.75rem 0 .75rem 0;font-weight:650;letter-spacing:-0.01em;">
+        Currently reading
+      </h2>
+      <ul style="display:grid;gap:.65rem;">
+        <li style="padding:.75rem .9rem;border:1px solid rgba(255,255,255,.10);border-radius:.65rem;background:rgba(255,255,255,.03);">
+          <div style="font-weight:650;">Vagabond</div>
+          <div style="color:rgba(255,255,255,.65);font-size:.95rem;">by Takehiko Inoue — learning that true strength is as much about inner peace as it is about the sword.</div>
+        </li>
+      </ul>
+
+      <h2 style="font-size:1.15rem;margin:1.75rem 0 .75rem 0;font-weight:650;letter-spacing:-0.01em;">
+        Favorites
+      </h2>
+      <ul style="display:grid;gap:.65rem;">
+        <li style="padding:.75rem .9rem;border:1px solid rgba(255,255,255,.10);border-radius:.65rem;background:rgba(255,255,255,.03);">
+          <div style="font-weight:650;">Berserk</div>
+          <div style="color:rgba(255,255,255,.65);font-size:.95rem;">by Kentaro Miura — carving your way through demons and trauma in search of freedom and meaning.</div>
+        </li>
+        <li style="padding:.75rem .9rem;border:1px solid rgba(255,255,255,.10);border-radius:.65rem;background:rgba(255,255,255,.03);">
+          <div style="font-weight:650;">Blame!</div>
+          <div style="color:rgba(255,255,255,.65);font-size:.95rem;">by Tsutomu Nihei — in a system that doesn't care about you, meaning comes from persistence.</div>
+        </li>
+        <li style="padding:.75rem .9rem;border:1px solid rgba(255,255,255,.10);border-radius:.65rem;background:rgba(255,255,255,.03);">
+          <div style="font-weight:650;">NieR (not a book but still meaningful)</div>
+          <div style="color:rgba(255,255,255,.65);font-size:.95rem;">by Yoko Taro — When the purpose you're given collapses, you get to choose your own meaning.</div>
+        </li>
+      </ul>
+
+      <h2 style="font-size:1.15rem;margin:1.75rem 0 .75rem 0;font-weight:650;letter-spacing:-0.01em;">
+        On my list
+      </h2>
+      <p style="color:rgba(255,255,255,.75);margin-bottom:.75rem;">
+        Stuff I want to get to soon.
+      </p>
+      <ul style="display:grid;gap:.5rem;">
+        <li>More computer science papers</li>
+      </ul>
+    </main>
+
+    <footer>
+      © <span></span> 2025 Marco Schumacher, ocram111111[at]gmail.com
+    </footer>
+  </div>
+</body>
+</html>
