@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music — Track 1</title>
+  <meta name="description" content="music track 1" />
+
+  <link rel="icon" href="./assets/images/Icon.svg" type="image/svg+xml" />
+
+  <style>
+    :root { color-scheme: dark; }
+
+    html, body { height: 100%; }
+
+    body{
+      margin:0;
+      background:#131313;
+      color:#f0f0f0;
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+
+    .page{
+      max-width: 44rem;
+      padding: 3.5rem 1.25rem 0;
+      margin: 0 auto;
+
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    h1{
+      font-size: 2.1rem;
+      line-height: 1.2;
+      margin: 0 0 1rem 0;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    p{ margin: 0 0 1rem 0; color: rgba(255,255,255,.75); }
+
+    .player{
+      margin-top: 1.25rem;
+      border-radius: 14px;
+      overflow: hidden;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+
+    video{
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
+    footer{
+      font-size: .9rem;
+      color: rgba(255, 255, 255, 0.55);
+      padding-top: 2.5rem;
+      padding-bottom: 1.25rem;
+    }
+
+    .top-left{
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 999;
+      font-size: .95rem;
+      color: rgba(255,255,255,.7);
+      text-decoration: none;
+      padding: .25rem .35rem;
+      border-radius: .4rem;
+      transition: background-color .18s ease, color .18s ease;
+    }
+    .top-left:hover,
+    .top-left:focus-visible{
+      background: rgba(255,255,255,.10);
+      color: rgba(255,255,255,.95);
+    }
+  </style>
+</head>
+
+<body>
+  <a class="top-left" href="./index.html" aria-label="Back to home">
+    personal site / music
+  </a>
+
+  <div class="page">
+    <main>
+      <h1>Track 1</h1>
+      <p>Playing: <code style="color: rgba(255,255,255,.85);">./assets/videos/idk.mp3</code></p>
+
+      <div class="player">
+        <audio controls preload="metadata">
+          <source src="./assets/videos/idk.mp3" type="audio/mpeg" />
+          Sorry—your browser can’t play this audio.
+        </audio>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Marco Schumacher
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
